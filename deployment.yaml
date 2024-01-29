@@ -18,7 +18,7 @@ spec:
         app: todo_app
     spec:
       containers:
-      - image: moezelkounii/todo_app:latest
+      - image: moezelkounii/todo_app:2
         name: todo_app
         resources: {}
 status: {}
