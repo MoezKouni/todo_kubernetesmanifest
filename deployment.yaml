@@ -3,23 +3,23 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: todo_app
-  name: todo_app
+    app: todo-app
+  name: todo-app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: todo_app
+      app: todo-app
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: todo_app
+        app: todo-app
     spec:
       containers:
-      - image: moezelkounii/todo_app:latest
-        name: todo_app
+      - image: moezelkounii/todo-app:latest
+        name: todo-app
         resources: {}
 status: {}
 ---
@@ -35,4 +35,4 @@ spec:
   - port: 80
     targetPort: 3000
   selector:
-    app: todo_app
+    app: todo-app
