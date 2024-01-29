@@ -14,7 +14,7 @@ node {
                         sh "git config user.email mo.elkouni@gmail.com"
                         sh "git config user.name MoezKouni"
                         sh "cat deployment.yaml"
-                        sh "sed -i 's+moezelkounii/todo_app.*+moezelkounii/todo_app:${DOCKERTAG}+g' deployment.yaml"
+                        sh "sed -i 's+moezelkounii/todo-app.*+moezelkounii/todo-app:${DOCKERTAG}+g' deployment.yaml"
                         sh "cat deployment.yaml"
                         sh "git add ."
                         sh "git commit -m 'Done by Jenkins Job changemanifest: ${env.BUILD_NUMBER}'"
